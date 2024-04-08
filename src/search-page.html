@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog.th</title>
+    <link href="./output.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="container max-xl mx-auto">
+      <header>
+        <nav class="flex flex-row justify-between items-center py-4">
+          <div class="mx-4 font-bold text-3xl">
+            <h1><a href="index.html">Blog.th</a></h1>
+          </div>
+
+          <div class="mx-4">
+            <ul class="flex flex-row justify-center">
+              <div class="invisible w-0 lg:visible lg:w-auto">
+              </div>
+              <div class="flex mt-2">
+                <li><a href="#" class="ml-10">Log in</a></li>
+                <li><a href="#" class="rounded mx-5 border-solid bg-purple-500 hover:bg-purple-700 text-white py-3 px-2">Sign up</a></li>
+              </div>
+            </ul>
+          </div>
+      </header>
+
+      <section>
+        <div class="text-center my-10">
+          <p class="text-purple-500 font-bold">All blogs</p>
+          <h1 class="font-bold text-5xl my-3">Stories <span class="text-purple-500">&</span> Ideas</h1>
+          <p>Explore all of our stories below</p>
+        </div>
+
+        <div class="flex flex-row list-none justify-center">
+          <div class="flex justify-center mt-2">
+            <li><a href="#" class="mr-2 italic font-semibold" id="search-button">Search</a></li>
+            <li><i class="fa-solid fa-magnifying-glass"></i></li>
+          </div>
+          <div>
+            <input type="search" id="search-input" class="p-2 border border-gray-300 rounded lg:mx-2">
+          </div>
+        </div>
+
+        <div class="flex justify-center m-6 align-center">
+          <label for="category-select" class="font-semibold italic mr-2">Select Category:</label>
+          <select id="category-select" class="p-2 border border-gray-300 rounded">
+            <option value="">All</option>
+            <option value="Programming">Programming</option>
+            <option value="Health">Health</option>
+          </select>
+        </div>
+
+        <div class="container grid justify-around">
+            <h1 class="mt-20 mb-10 lg:pl-5 text-4xl font-extrabold lg:my-5 text-center lg:text-center italic antialiased">All of our blogs</h1>
+            <div class="flex justify-center my-8">
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+            
+            <div id="data-container" class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-around"></div>
+        </div>        
+    </div>
+    <script src="https://kit.fontawesome.com/070e8a473f.js" crossorigin="anonymous"></script>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

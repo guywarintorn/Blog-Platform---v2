@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create your blog</title>
+    <link href="./output.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div class="container max-xl mx-auto">
+      <header>
+        <nav class="flex flex-row justify-between items-center py-4">
+          <div class="mx-4 font-bold text-3xl">
+            <h1><a href="index.html">Blog.th</a></h1>
+          </div>
+
+          <div class="mx-4">
+            <ul class="flex flex-row">
+              <div class="invisible w-0 lg:visible lg:w-auto">
+                <div class="flex flex-row list-none justify-center">
+                    <li><a href="#" class="mr-2 italic font-semibold">Search</a></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                </div>
+              </div>
+              <li><a href="#" class="ml-10">Log in</a></li>
+              <li><a href="#" class="rounded mx-5 border-solid bg-purple-500 hover:bg-purple-700 text-white py-3 px-2">Sign up</a></li>
+            </ul>
+          </div>
+      </header>
+
+      <form>
+        <div class="mx-auto w-5/6 lg:w-3/6 py-10">
+          <div class="grid grid-cols-1 text-center justify-center">
+            <p class="text-purple-500 font-bold my-10 text-2xl">Create your blog</p>
+            <div class="border-solid border-2 border-violet-500 p-10 bg-gray-100 rounded-lg">
+              <div class="grid grid-cols-1 gap-3 lg:grid-cols-2 text-start">
+
+                <div>
+                  <label for="username">First name</label>
+                  <div class="mt-2">
+                    <div class="flex rounded-md shadow-sm ring-1 ring-inset ring-gray-300">
+                      <input type="text" name="username" class="block flex-1 border-0 bg-white" placeholder="Enter your name">
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="">Last name</label>
+                  <div class="mt-2">
+                    <div class="flex shadow-sm ring-1 ring-inset ring-gray-300">
+                      <input type="text" name="lastname" class="block flex-1 border-0 bg-white" placeholder="Enter your last name">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-10">
+                  <label for="">Email address</label>
+                  <div class="mt-2">
+                    <div class="flex shadow-sm ring-1 ring-inset ring-gray-300">
+                      <input type="email" name="email" class="block flex-1 border-0 bg-white" placeholder="Email address">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="grid grid-cols-1 gap-3 text-start">
+                <div>
+                  <label for="">Title</label>
+                  <div class="mt-2">
+                    <div class="flex shadow-sm ring-1 ring-inset ring-gray-300">
+                      <input type="text" name="text" class="block flex-1 border-0 bg-white" placeholder="Blog's title">
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <label for="">Blog's category</label>
+                  <div class="mt-2">
+                    <div class="flex shadow-sm ring-1 ring-inset ring-gray-300">
+                      <input type="text" name="text" class="block flex-1 border-0 bg-white" placeholder="Blog's category">
+                    </div>
+                  </div>
+                </div>
+
+                <div class="mb-10">
+                  <label for="">Content</label>
+                  <div class="mt-2">
+                    <div class="flex shadow-sm ring-1 ring-inset ring-gray-300">
+                      <input type="text" name="text" class="h-36 block flex-1 border-0 bg-white" placeholder="Write here...">
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <button class="bg-violet-500 hover:bg-violet-700 w-full text-white block p-2">Post</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <script src="https://kit.fontawesome.com/070e8a473f.js" crossorigin="anonymous"></script>
+  </body>
+</html>
